@@ -1,0 +1,22 @@
+---
+title: "map"
+author: "Jason"
+date: "5/24/2020"
+output:
+  html_document: default
+  word_document: default
+  pdf_document: default
+---
+
+```{r}
+library(leaflet)
+```
+
+```{r}
+my_map <- leaflet() %>% addTiles() 
+my_map <- my_map %>% addMarkers(lat=52.336649, lng= 4.872474, popup="Deloitte Amsterdam")
+my_map
+```
+
+
+
